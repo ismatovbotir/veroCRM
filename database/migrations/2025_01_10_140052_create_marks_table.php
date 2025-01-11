@@ -16,8 +16,8 @@ return new class extends Migration
             $table->foreignId('item_id');
             $table->string('serial');
             $table->string('mark')->nullable();
-            $table->integer('state')->default(0);
-
+            $table->enum('state',['new','active','sold'])->default('new');
+            $table->foreignId('user_id')->nullable()->comment('User, activated mark');
             $table->timestamps();
         });
     }

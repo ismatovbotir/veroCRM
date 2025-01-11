@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
-    use HasUuids
+    use HasUuids;
+
+    public $incrementing = false;
+    protected $keyType = 'string';
 }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('item_id');
             $table->foreignId('mark_id');
             $table->integer('qty')->default(1);
-            $table->foreignId('user_id');
+            $table->foreignUuid('user_id');
             $table->timestamps();
         });
     }

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('erpNumber')->nullable();
             $table->foreignUuid('client_id');
+            $table->enum('state',['new','work','done','cancel'])->default('new');
             $table->foreignUuid('user_id')->nullable();
 
 
