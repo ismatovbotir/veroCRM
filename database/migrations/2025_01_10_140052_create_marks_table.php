@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('item_id');
             $table->string('serial');
             $table->string('mark')->nullable();
+            $table->integer('state')->default(0);
 
             $table->timestamps();
         });
