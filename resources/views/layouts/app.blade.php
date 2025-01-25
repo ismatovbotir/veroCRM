@@ -65,7 +65,7 @@
             <use xlink:href="{{asset('node_modules/@coreui/icons/sprites/free.svg#cil-speedometer')}}"></use>
           </svg> Dashboard<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
       <li class="nav-title">Theme</li>
-      <li class="nav-item"><a class="nav-link" href="{{route('item.index')}}">
+      <li class="nav-item"><a class="nav-link" href="">
           <svg class="nav-icon">
             <use xlink:href="{{asset('node_modules/@coreui/icons/sprites/free.svg#cil-drop')}}"></use>
           </svg> Items</a></li>
