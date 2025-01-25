@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('marks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('item_id');
+            $table->foreignId('transaction_id')->nullable();
             $table->string('serial');
             $table->string('mark')->nullable();
             $table->enum('state',['new','active','sold'])->default('new');
