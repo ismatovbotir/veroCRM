@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::group(['prefix'=>'admin','as'=>'admin.'],function(){
     Route::get('/',function(){
-        return 'admin.index';
+        return view('admin.index');
     });
     Route::resource('/user',UserController::class);
     Route::resource('/item',ItemController::class);
